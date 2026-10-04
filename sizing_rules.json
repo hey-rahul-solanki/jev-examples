@@ -1,0 +1,53 @@
+{
+    "question": {
+      "type": "choice",
+      "instructions": "Based on the ticket's effort, complexity, and uncertainty scores, what T-shirt size best represents the overall size of the work?",
+      "criteria": {
+        "XS": {
+          "what": "Very small work with minimal effort, complexity, and uncertainty. Usually an isolated and straightforward change.",
+          "not_for": "Work involving multiple components, meaningful dependencies, or significant investigation.",
+          "examples": [
+            "Small configuration change",
+            "Minor isolated code change",
+            "Simple documentation update"
+          ]
+        },
+        "S": {
+          "what": "Small work with low effort and complexity. The implementation is straightforward and has limited dependencies or uncertainty.",
+          "not_for": "Work requiring substantial investigation, multiple components, or significant integration work.",
+          "examples": [
+            "Small feature enhancement",
+            "Simple API change",
+            "Minor UI change"
+          ]
+        },
+        "M": {
+          "what": "Moderate work requiring meaningful implementation effort across one or more components, but with a reasonably understood solution.",
+          "not_for": "Major cross-system work, significant architectural changes, or highly uncertain implementation.",
+          "examples": [
+            "Feature spanning several components",
+            "Moderate database or API changes",
+            "Integration with an existing internal service"
+          ]
+        },
+        "L": {
+          "what": "Substantial work involving multiple components, dependencies, integrations, or significant technical complexity.",
+          "not_for": "Straightforward changes that can be completed with limited coordination and low uncertainty.",
+          "examples": [
+            "Integration with a new external system",
+            "Changes across multiple services",
+            "Large feature requiring coordinated development"
+          ]
+        },
+        "XL": {
+          "what": "Very large work involving major architectural impact, multiple systems, substantial dependencies, or high uncertainty.",
+          "not_for": "Work that can be reasonably contained within a normal feature implementation.",
+          "examples": [
+            "Major platform redesign",
+            "Large-scale system migration",
+            "Cross-system architectural transformation"
+          ]
+        }
+      }
+    }
+  }

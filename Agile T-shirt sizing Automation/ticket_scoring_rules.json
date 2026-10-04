@@ -1,0 +1,40 @@
+{
+    "questions": {
+      "complexity": {
+        "type": "score",
+        "instructions": "How complex is the ticket?",
+        "criteria": [
+          "Very simple; isolated change with minimal technical work",
+          "Simple; small change with limited impact",
+          "Moderate; requires changes across one or more components",
+          "Complex; multiple components or significant technical work",
+          "Very complex; substantial dependencies or architectural impact",
+          "Extremely complex; major cross-system or architectural change"
+        ]
+      },
+      "effort": {
+        "type": "score",
+        "instructions": "How much human effort is required to complete the ticket?",
+        "criteria": [
+          "Minimal effort; can be completed very quickly",
+          "Low effort; small amount of implementation work",
+          "Moderate effort; requires several implementation tasks",
+          "High effort; substantial implementation work",
+          "Very high effort; significant amount of work across components",
+          "Extremely high effort; major implementation effort"
+        ]
+      },
+      "uncertainty": {
+        "type": "score",
+        "instructions": "How uncertain is the work required to complete the ticket?",
+        "criteria": [
+          "No uncertainty; requirements and implementation are well understood",
+          "Very low uncertainty; minor unknowns",
+          "Low uncertainty; a few unknowns may need investigation",
+          "Moderate uncertainty; several aspects require investigation",
+          "High uncertainty; significant unknowns or dependencies",
+          "Extremely high uncertainty; major unknowns or unclear implementation path"
+        ]
+      }
+    }
+  }
